@@ -1,14 +1,14 @@
+  var wordArray;
 function word(text){
   var firstw = text.charAt(0);
   var remaining;
   var converted;
+
+
 //if first letter is not vowels
-
-console.log(firstw ==="a"||firstw === "e"||firstw === "i"||firstw === "o"||firstw === "u");
-
   if(firstw !== "a"||firstw !== "e"||firstw !== "i"||firstw !== "o"||firstw !== "u"){
     remaining = text.slice(1);
-    console.log(remaining);
+
     converted=remaining+"-"+text.charAt(0)+"ay";
     return converted;
   }else{
@@ -17,6 +17,22 @@ console.log(firstw ==="a"||firstw === "e"||firstw === "i"||firstw === "o"||first
   }
 }
 
+
+//split words to array
+function wordsToArray(string){
+  var werds = 0;
+werds = string.split(" ");
+wordArray=werds;
+return wordArray;
+};
+console.log(wordArray[1]);
+//load array of words
+/*function loadString(werds){
+  for (var i =0; i<werds.length; i++){
+    text(werds[i])
+  }
+}
+*/
 /*if(firstw === "a"||"e"||"i"||"o"||"u"){
   converted = text+"-ay";
   return converted;
@@ -30,6 +46,3 @@ console.log(firstw ==="a"||firstw === "e"||firstw === "i"||firstw === "o"||first
 
 
 
-
-
-console.log(word("uganda"));
